@@ -18,11 +18,25 @@
             background: white;
             margin-top: 20px;
             }
-            h1   {color: #92B901;
-            font-family: ff-tisa-sans-web-pro, sans-serif;
+            h1   {font-family: ff-tisa-sans-web-pro, sans-serif;
             font-style: normal;
             font-weight: 800;
             text-align: center;
+            background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            color: transparent;
+  
+            background-size: 300%;
+            background-position: -100%;  
+  
+            animation: animatedText 2s infinite alternate-reverse;
+        }
+        @keyframes animatedText{
+            to{
+                background-position: 100%; 
+            }
+        }
             }
             p    {color: red;}
             #split{align-items: center;
